@@ -1,24 +1,35 @@
 <meta charset="UTF-8">
 
+<h1>PROGRAMA</h1>
 
 <script>
-document.write("La suma de las edades de Juan, Pedro y Carlos es...");
-document.write("<br>");
-document.write((20+25+15));
-document.write("<br>");
-document.write("<br>");
-document.write("Juan nació en el año...");
-document.write("<br>");
-document.write(2020-20);
-document.write("<br>");
-document.write("<br>");
-document.write("Pedro nació en el año...");
-document.write("<br>");
-document.write(2020-25);
-document.write("<br>");
-document.write("<br>");
-document.write("Carlos nació en el año...");
-document.write("<br>");
-document.write(2020-15);
+
+function saltarlinea() {
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+	// body...
+}
+
+function imprimir(frase){
+	document.write(frase);
+	saltarlinea();
+}
+
+var anho = 2025;
+
+imprimir("¡Hola amigos!");
+
+
+//Este código calcula las edades de Juan, Pedro y Carlos.
+
+imprimir("Juan tiene: " + (anho-2000) + " años");
+
+imprimir("Pedro tiene: " + (anho-1995) + " años");
+
+anho = 2030;
+
+imprimir("Carlos tiene: " + (anho-2005) + " años");
+
 
 </script>
